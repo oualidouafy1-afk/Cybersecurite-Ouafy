@@ -1,128 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NetScan Pro | by Oualid Ouafy</title>
+    <title>نصائح الأمان السيبراني | Oualid Ouafy</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <div class="dashboard">
-        <aside class="sidebar">
-            <div class="logo">
-                <i class="fas fa-satellite-dish"></i>
-                <h2>NetScan<span>Pro</span></h2>
-            </div>
-            <nav class="menu">
-                <a href="#" class="active"><i class="fas fa-chart-line"></i> Dashboard</a>
-                <a href="#"><i class="fas fa-radar"></i> Live Scan</a>
-                <a href="#"><i class="fas fa-bug"></i> Vulnerabilities</a>
-                <a href="#"><i class="fas fa-file-shield"></i> Reports</a>
-                <a href="#"><i class="fas fa-gear"></i> Settings</a>
-            </nav>
-            <div class="user">
-                <img src="https://i.imgur.com/8Km9tLL.png" alt="user">
-                <div>
-                    <h4>Oualid Ouafy</h4>
-                    <p>Security Analyst</p>
+    <div class="container">
+        <header>
+            <h1>🛡️ مركز الأمان السيبراني</h1>
+            <p>5 نصائح أساسية لحماية نفسك على الإنترنت</p>
+        </header>
+
+        <main>
+            <div class="card">
+                <div class="number">1</div>
+                <div class="content">
+                    <h3>كلمة سر قوية</h3>
+                    <p>استخدم 12 حرف على الأقل. خلط بين الحروف الكبيرة والصغيرة، الأرقام، والرموز مثل @#$.</p>
                 </div>
             </div>
-        </aside>
 
-        <main class="main-content">
-            <header>
-                <h1>Network Dashboard</h1>
-                <div class="search">
-                    <i class="fas fa-magnifying-glass"></i>
-                    <input type="text" placeholder="Search IP, Domain, Port...">
+            <div class="card">
+                <div class="number">2</div>
+                <div class="content">
+                    <h3>التحقق بخطوتين</h3>
+                    <p>فعّل المصادقة الثنائية 2FA فـ الإيميل والمواقع المهمة. كتزيد طبقة حماية إضافية.</p>
                 </div>
-                <button class="btn-scan"><i class="fas fa-play"></i> Start New Scan</button>
-            </header>
+            </div>
 
-            <section class="cards">
-                <div class="card">
-                    <div class="card-icon blue">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <div class="card-info">
-                        <h3>127</h3>
-                        <p>Active Hosts</p>
-                    </div>
+            <div class="card">
+                <div class="number">3</div>
+                <div class="content">
+                    <h3>تحديث البرامج</h3>
+                    <p>دايما حدث النظام والبرامج ديالك. التحديثات كتصلح الثغرات الأمنية الخطيرة.</p>
                 </div>
-                <div class="card">
-                    <div class="card-icon red">
-                        <i class="fas fa-triangle-exclamation"></i>
-                    </div>
-                    <div class="card-info">
-                        <h3>23</h3>
-                        <p>Critical Alerts</p>
-                    </div>
-                <div class="card">
-                    <div class="card-icon orange">
-                        <i class="fas fa-door-open"></i>
-                    </div>
-                    <div class="card-info">
-                        <h3>1,429</h3>
-                        <p>Open Ports</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-icon green">
-                        <i class="fas fa-shield-check"></i>
-                    </div>
-                    <div class="card-info">
-                        <h3>98%</h3>
-                        <p>System Health</p>
-                    </div>
-                </div>
-            </section>
+            </div>
 
-            <section class="table-section">
-                <h2>Recent Scan Results</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>IP Address</th>
-                            <th>Hostname</th>
-                            <th>Status</th>
-                            <th>Ports</th>
-                            <th>Risk Level</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>192.168.1.1</td>
-                            <td>router.local</td>
-                            <td><span class="status online">Online</span></td>
-                            <td>22, 80, 443</td>
-                            <td><span class="risk high">High</span></td>
-                        </tr>
-                        <tr>
-                            <td>192.168.1.15</td>
-                            <td>server-db</td>
-                            <td><span class="status online">Online</span></td>
-                            <td>3306, 8080</td>
-                            <td><span class="risk critical">Critical</span></td>
-                        </tr>
-                        <tr>
-                            <td>192.168.1.23</td>
-                            <td>dev-pc</td>
-                            <td><span class="status online">Online</span></td>
-                            <td>3000</td>
-                            <td><span class="risk low">Low</span></td>
-                        </tr>
-                        <tr>
-                            <td>192.168.1.105</td>
-                            <td>printer-hp</td>
-                            <td><span class="status offline">Offline</span></td>
-                            <td>9100</td>
-                            <td><span class="risk medium">Medium</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+            <div class="card">
+                <div class="number">4</div>
+                <div class="content">
+                    <h3>احذر الروابط المشبوهة</h3>
+                    <p>ماتضغطش على روابط فـ الإيميلات الغريبة. تأكد من العنوان قبل ما تدخل معلوماتك.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="number">5</div>
+                <div class="content">
+                    <h3>شبكة Wi-Fi آمنة</h3>
+                    <p>ماتستعملش Wi-Fi عمومي فـ العمليات البنكية. استعمل VPN إلا كان ضروري.</p>
+                </div>
+            </div>
         </main>
+
+        <footer>
+            <p>إعداد: Oualid Ouafy | مشروع توعوي 2026</p>
+        </footer>
     </div>
 </body>
 </html>
