@@ -1,32 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dark Mode Login - oualid ouafy</title>
-<link rel="stylesheet" href="styl.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetScan Pro | by Oualid Ouafy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-satellite-dish"></i>
+                <h2>NetScan<span>Pro</span></h2>
+            </div>
+            <nav class="menu">
+                <a href="#" class="active"><i class="fas fa-chart-line"></i> Dashboard</a>
+                <a href="#"><i class="fas fa-radar"></i> Live Scan</a>
+                <a href="#"><i class="fas fa-bug"></i> Vulnerabilities</a>
+                <a href="#"><i class="fas fa-file-shield"></i> Reports</a>
+                <a href="#"><i class="fas fa-gear"></i> Settings</a>
+            </nav>
+            <div class="user">
+                <img src="https://i.imgur.com/8Km9tLL.png" alt="user">
+                <div>
+                    <h4>Oualid Ouafy</h4>
+                    <p>Security Analyst</p>
+                </div>
+            </div>
+        </aside>
 
-<div class="container">
-    <div class="walid">
-        <div class="glow"></div>
+        <main class="main-content">
+            <header>
+                <h1>Network Dashboard</h1>
+                <div class="search">
+                    <i class="fas fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search IP, Domain, Port...">
+                </div>
+                <button class="btn-scan"><i class="fas fa-play"></i> Start New Scan</button>
+            </header>
 
-        <h1>Welcome</h1>
-        <p class="subtitle">Created by <span>oualid ouafy</span></p>
-        <div class="input-group">
-            <label>IDENTIFY</label>
-           <input type="email" placeholder="gmail">
-        </div>
+            <section class="cards">
+                <div class="card">
+                    <div class="card-icon blue">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>127</h3>
+                        <p>Active Hosts</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon red">
+                        <i class="fas fa-triangle-exclamation"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>23</h3>
+                        <p>Critical Alerts</p>
+                    </div>
+                <div class="card">
+                    <div class="card-icon orange">
+                        <i class="fas fa-door-open"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>1,429</h3>
+                        <p>Open Ports</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon green">
+                        <i class="fas fa-shield-check"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>98%</h3>
+                        <p>System Health</p>
+                    </div>
+                </div>
+            </section>
 
-        <div class="input-group">
-            <label>SECURITY</label>
-            <input type="password" placeholder="Password">
-        </div>
-
-        <button class="btn">Unlock Session</button>
+            <section class="table-section">
+                <h2>Recent Scan Results</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>IP Address</th>
+                            <th>Hostname</th>
+                            <th>Status</th>
+                            <th>Ports</th>
+                            <th>Risk Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>192.168.1.1</td>
+                            <td>router.local</td>
+                            <td><span class="status online">Online</span></td>
+                            <td>22, 80, 443</td>
+                            <td><span class="risk high">High</span></td>
+                        </tr>
+                        <tr>
+                            <td>192.168.1.15</td>
+                            <td>server-db</td>
+                            <td><span class="status online">Online</span></td>
+                            <td>3306, 8080</td>
+                            <td><span class="risk critical">Critical</span></td>
+                        </tr>
+                        <tr>
+                            <td>192.168.1.23</td>
+                            <td>dev-pc</td>
+                            <td><span class="status online">Online</span></td>
+                            <td>3000</td>
+                            <td><span class="risk low">Low</span></td>
+                        </tr>
+                        <tr>
+                            <td>192.168.1.105</td>
+                            <td>printer-hp</td>
+                            <td><span class="status offline">Offline</span></td>
+                            <td>9100</td>
+                            <td><span class="risk medium">Medium</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
     </div>
-</div>
-
 </body>
 </html>
